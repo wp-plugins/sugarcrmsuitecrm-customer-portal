@@ -1,0 +1,87 @@
+
+/*scp-form
+===========================*/
+.scp-form ul { width: 100%; display: inline-block; margin: 0; padding: 0;}
+.scp-form li { width: 100%; display: inline-block; padding-bottom: 15px;}
+.scp-form li label { width: 100%; display: inline-block; font-size: 13px; font-weight: 600; padding-bottom: 3px;}
+.scp-form li span { width: 100%; display: inline-block;}
+.scp-form li .input-text { width: 100%; font-size: 13px;}
+.scp-form li.scp-send span{ display: inline-block; width: auto;}
+.scp-form li.scp-send .forgot-pass { display: inline-block; margin-left: 10px;}
+.scp-form li.last { padding-bottom:0; }
+.scp-form .input-text { border: 1px solid #ddd; height:40px; line-height: 40px; padding: 0 10px;}
+.scp-form input[type="file"] { border: 0; padding: 0; line-height: normal; height: auto; font-size: 13px;}
+.scp-form textarea.input-text { height: 150px; line-height: normal;}
+.scp-form-two-col li { margin-right: 3%;  width: 48.2%;}
+.scp-form-two-col li.last { margin-right: 0; padding-bottom: 15px;}
+
+.scp-form-list-view{border: 1px solid #ddd;  display: inline-block;  margin-bottom: 25px;  padding: 10px;   width: 100%;}
+.scp-form-list-view ul { width: 100%; display: inline-block; margin: 0; padding: 0;}
+.scp-form-list-view li { border-top: 1px solid #ddd;  display: inline-block;   font-size: 13px;  padding: 10px 0;  vertical-align: top; width: 48%;}
+.scp-form-list-view li:first-child, 
+.scp-form-list-view li:first-child + li {  border-top: medium none;}
+
+.scp-form-list-view li label { width: 25%; display: inline-block; font-weight: 600; vertical-align: top;}
+.scp-form-list-view li span { width: 65%; display: inline-block;}
+.scp-tab-content .success,.entry-content .success {background: #cfffc6;  border-left: 5px solid #6db05f;  color: #4c933e;   display: inline-block;  font-size: 13px;  padding: 5px;  width: 100%;}
+.scp-login-form .error,
+.scp-tab-content .error,.entry-content .error {background: #ffc6c6;  border-left: 5px solid #a53c3c;  color: #a53c3c;   display: inline-block;  font-size: 13px;  padding: 5px;  width: 100%;}
+
+.scp-login-form .error,.scp-login-form .success { margin-top: 15px;}
+.userinfo { float: right; font-size: 17px;}
+
+/*scp-login-form
+===========================*/
+.scp-login-form,
+.scp-forgotpas-form { width: 340px; margin: 0 auto; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; border:1px solid #eee; max-width: 100%;}
+.scp-login-form h3,
+.scp-forgotpas-form h3 { margin: 0; padding: 0 0 25px 0 ;}
+
+
+/*scp-login-form
+===========================*/
+.scp-tab { width: 100%; display: inline-block; margin: 0; padding: 0; border-bottom: 1px solid #ddd;}
+.scp-tab li { display: inline-block; position: relative;}
+.scp-tab li a { padding: 5px 15px;  display: block; background: #eee; color: #666; border: 1px solid #ddd; border-bottom: none;} 
+.scp-tab li a:hover { text-decoration: none; color: #000;}
+.scp-tab li.active:after,
+.scp-tab li:hover:after{ border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-top: 10px solid #eee;    bottom: -10px;   content: "";  height: 0;  left: 0;  margin: 0 auto;    position: absolute;    right: 0;    width: 0;}
+.scp-tab-content { border: 1px solid #ddd; border-top:none; width: 100%; display: inline-block; padding: 25px;}
+.scp-tab-content h3 { margin: 0; padding: 0 0 20px 0 ;}
+.scp-tab-content table { margin: 0; padding: 0;}
+
+/* pagination
+===========================*/
+.pagination { float: right; }
+.pagination li { float: left; list-style: outside none none; padding: 0 0 0 20px; }
+.pagination .current { color: #000000 !important; }   
+
+.scp-send .right {float: right;}
+
+.scp-both-sort { background-image: url("../images/sort_both.png"); background-repeat: no-repeat; background-position: right center; }
+.scp-asc-sort { background-image: url("../images/sort_asc.png"); background-repeat: no-repeat; background-position: right center; }
+.scp-desc-sort { background-image: url("../images/sort_desc.png"); background-repeat: no-repeat; background-position: right center; }
+.main-col a { color: #000000 !important;  padding-right: 20px; }
+.main-col a:hover { color: #000000 !important; text-decoration: none; }
+.download-link { background: none !important; border: medium none !important; color: #b93207 !important; padding: 0 !important; }
+
+.all-notes { float: left; margin: 16px 0; width: 100%; }
+.all-notes > h3 { padding: 0; }
+.all-notes ul { border: 1px solid #ddd; padding: 15px; float: left; width: 100%; }
+.all-notes ul li { list-style: none;  padding: 10px 0; float: left; width: 100%; border-bottom: 1px solid #ddd;}
+.all-notes ul li.last { border-bottom: none; }
+.all-notes li .name { font-size: 19px; font-weight: bold; float: left; width: 100%; }
+.all-notes li .description { padding-left: 3%; float: left; width: 100%;}
+.all-notes li .asttachment { float: left; width: 100%; padding-left: 3%; font-size: 13px;}
+.all-notes li .asttachment span { float: left; font-weight: bold; margin-right: 3px;}
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+.scp-tab-content { padding: 10px}
+.scp-form-list-view li { width: 100%;}
+.scp-form-list-view li:first-child + li { border-top: 1px solid #ddd;}
+.scp-form-two-col li {margin-right: 0;  width: 100%;}
+.scp-tab li a { padding:5px 10px; font-size: 13px; }
+.scp-login-form, .scp-forgotpas-form { max-width: 100%;}
+ 
+}
