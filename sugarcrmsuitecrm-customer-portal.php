@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: SugarCRM/SuiteCRM Customer Portal
- * Description: Sugar CRM Portal + Integration 
+ * Description: This plug-in use for sugarcrm. It manage Cases services-releated problems reported by your users and customers. 
  * Author: biztechc
  * Author URI: http://www.biztechconsultancy.com
  * Version: 1.0.0 
@@ -24,7 +24,7 @@ add_action('admin_menu', 'sugar_crm_portal_create_menu');
 function sugar_crm_portal_create_menu(){
 
     //create admin side menu
-    add_menu_page('Sugar CRM Portal Settings', 'Sugar CRM Portal', 'administrator', 'sugar-crm-portal', 'sugar_crm_portal_settings_page');
+    add_menu_page('SugarCRM/SuiteCRM Customer Portal', 'Customer Portal', 'administrator', 'sugar-crm-portal', 'sugar_crm_portal_settings_page');
 
     //call register settings function
     add_action( 'admin_init', 'register_sugar_crm_portal_settings' );
@@ -44,7 +44,7 @@ function sugar_crm_portal_settings_page(){
 // Admin side page options
     ?>
         <div class='wrap'>
-            <h2>Sugar CRM Portal Settings</h2>
+            <h2>SugarCRM/SuiteCRM Customer Portal Settings</h2>
 
             <form method='post' action='options.php'>
                 <?php settings_fields( 'sugar_crm_portal-settings-group' ); ?>
@@ -491,8 +491,8 @@ function sugar_crm_portal_index( $html = "" ) {  // index
     $current_url = $current_url[0];
     
     $objSCP = new SugarRestApiCall($scp_sugar_rest_url, $scp_sugar_username, $scp_sugar_password); 
-		$html .= "<div class='userinfo'>Welcome <span><a href='?scp-page=profile'>".$_SESSION['scp_user_account_name']."</a> </span>&nbsp; <a href='?logout=true'> (Log Out)</a></div>";
-		
+        $html .= "<div class='userinfo'>Welcome <span><a href='?scp-page=profile'>".$_SESSION['scp_user_account_name']."</a> </span>&nbsp; <a href='?logout=true'> (Log Out)</a></div>";
+        
         $html .= "<div class='scp-container'>
             <ul class='scp-tab'> 
                 <li class='";
@@ -1491,7 +1491,7 @@ function sugar_crm_portal_style_and_script()
 {
     // css
     wp_enqueue_style( 'scp-style', plugins_url('css/scp-style.css', __FILE__) );
-	
+    
     // js
     wp_enqueue_script( 'scp-js', plugins_url('js/scp-js.js', __FILE__),array( 'jquery' ) );
 } 

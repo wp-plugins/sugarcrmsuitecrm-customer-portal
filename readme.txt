@@ -12,7 +12,12 @@ This plug-in use for sugarcrm. It manage Cases services-releated problems report
 
 Plugin's settings will display at Sugar CRM Portal tab
 
-1. This plug-in use for sugarcrm. It manage Cases services-releated problems reported by your users and customers.  
+This WordPress plugin can help SugarCRM/SuiteCRM Portal users to manage their customers’ complaints and grievances easily by offering them an interface to lodge their complaint, which they can use to find the current status and follow ups of their lodged complaints also.  
+
+= Demo =
+
+You can check (http://wpdemo.biztechconsultancy.com/) here.
+
 
 == Installation ==
 
@@ -30,7 +35,8 @@ Plugin's settings will display at Sugar CRM Portal tab
 4. You can set setting.
 5. Use short code at any pages/posts e.g.[sugar-crm-portal]
 
-= SugarCRM/SuiteCRM Customer Portal Settings Wordpress Side =
+= Wordpress Side Settings =
+
 1.Portal Name: Add your portal name
 2.Version: Select SugarCRM version
 3.REST URL: 1. SugarCRM Version 6:- {SugarCRM Site URL}/service/v4_1/rest.php, 2. SugarCRM Version 7:- {SugarCRM Site URL}/rest/v10/ and SuiteCRM Version 7:- {SuiteCRM Site URL}/service/v4_1/rest.php 
@@ -38,7 +44,23 @@ Plugin's settings will display at Sugar CRM Portal tab
 5.Password: Add your SugarCRM admin password
 6.Cases Per Page: Allow number of Cases to display on page when using pagination
 
-= SugarCRM/SuiteCRM Customer Portal Settings SugarCRM Side =   
+= SugarCRM/SuiteCRM Side Settings =
+
+Our plugin requires 2 fields in Contacts module of SugarCRM/ SuiteCRM instance being integrated, these are, username and password, which is used by the Portal to log the user into the SugarCRM/SuiteCRM , and display his/her case details.
+
+Follow below steps to create these fields in SugarCRM/SuiteCRM  after installing the Wordpress Portal plugin into your Wordpress instance.
+
+1.Create ‘username_c’ and ‘password_c’ fields in Contacts
+	a.Go to Admin -> Studio -> Contacts Module -> Fields -> Add Field
+		i.Give name and label of the field.
+		ii.Check Required checkbox  and click Create.
+		iii.Both fields should be of varchar type.
+		iv.Follow this process for both the fields.
+2.Place both the fields in Editview and Detailview.
+	a.Go to Admin -> Studio -> Contacts Module -> Layouts -> EditView/DetailView
+		i.Drag and Drop field from left side panel to desired place.
+		ii.Follow same steps for both Edit and  Detail View.
+   
 
 == Frequently Asked Questions ==
 Is this plugin prepared for multisites? Yes.
