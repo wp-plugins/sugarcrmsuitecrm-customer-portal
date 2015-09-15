@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: SugarCRM/SuiteCRM Customer Portal
- * Description: This plug-in use for sugarcrm. It manage Cases services-releated problems reported by your users and customers. 
+ * Description: This plug-in use for sugarcrm. It manage Cases services-releated problems reported by your users and customers. You can get Pro version over <a href="https://store.biztechconsultancy.com/sugarcrm-wordpress-customer-portal-pro.htm" target='_blank'>here</a>
  * Author: biztechc
  * Author URI: http://www.biztechconsultancy.com
  * Version: 1.0.0 
