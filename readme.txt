@@ -24,6 +24,7 @@ You can check demo here (http://wpdemo.biztechconsultancy.com/demo-pro/)
 
 You can get pro version here. (https://store.biztechconsultancy.com/sugarcrm-wordpress-customer-portal-pro.htm)
 
+= Pro Version Features =
 You can offer restricted access to your customers, which you can edit anytime.
 
 You can view all updated date reflected in your SugarCRM dashboard whenever your customers make any update from their WP system.
