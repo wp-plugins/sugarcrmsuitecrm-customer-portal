@@ -18,7 +18,7 @@ Plugin's Short Code: [sugar-crm-portal]
 
 You can check here (http://wpdemo.biztechconsultancy.com).
 
-== Pro Version ==
+= Pro Version =
 
 You can check demo here (http://wpdemo.biztechconsultancy.com/demo-pro/)
 
